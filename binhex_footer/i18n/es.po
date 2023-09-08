@@ -1,0 +1,38 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* binhex_footer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20211018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-01 15:36+0000\n"
+"PO-Revision-Date: 2022-02-01 15:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: binhex_footer
+#: model_terms:ir.ui.view,arch_db:binhex_footer.footer_binhex
+msgid "Binhex"
+msgstr "Binhex"
+
+#. module: binhex_footer
+#: model_terms:ir.ui.view,arch_db:binhex_footer.footer_binhex
+msgid "Developed by Binhex System Solutions"
+msgstr "Desarrollado por Binhex System Solutions"
+
+#. module: binhex_footer
+#: model_terms:ir.ui.view,arch_db:binhex_footer.footer_binhex
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: binhex_footer
+#: model_terms:ir.ui.view,arch_db:binhex_footer.footer_binhex
+msgid "With technology"
+msgstr "Con tecnología"

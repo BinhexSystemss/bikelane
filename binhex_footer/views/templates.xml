@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template
+        id="footer_replace_binhex"
+        inherit_id="website.brand_promotion"
+        priority="20"
+    >
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace"/>
+    </template>
+
+    <template
+        id="footer_binhex"
+        inherit_id="web.frontend_layout"
+        customize_show="True"
+        name="Add binhex to footer"
+        priority="20"
+    >
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div/div" position="inside">
+            <div class="o_brand_promotion">
+              <div>
+              Developed by Binhex Systems Solutions | 
+              <a href="https://binhex.es/">
+                <img alt="Binhex" src="/binhex_footer/static/src/img/logo_negro.png" 
+                  loading="lazy" 
+                  style="height: 1.3em; vertical-align: sub;border: px solid;border-radius: 3px;"/>
+              </a>
+              </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

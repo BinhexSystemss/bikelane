@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+		<template id="report_invoice_document" inherit_id="account.report_invoice_document">
+			<xpath expr="//div[@id='total']/div[1]" position="attributes">
+				<attribute name="t-attf-class">#{'col-6'} ml-auto">
+				</attribute>
+			</xpath>
+			<xpath expr="//div[@id='total']/div[1]" position="before">
+				<div class="col-6">
+					<table class="table table-sm" style="page-break-inside: avoid;"
+						t-if="o.tax_line_ids">
+						<thead>
+							<tr>
+								<th>Tax Description</th>
+								<th>Tax Account</th>
+								<th class="text-right">Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr t-foreach="o.tax_line_ids" t-as="l">
+								<td>
+									<span t-field="l.name" />
+								</td>
+								<td>
+									<span t-field="l.account_id" />
+								</td>
+								<td class="text-right">
+									<span t-field="l.amount_total" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</xpath>
+		</template>
+
+	</data>
+</odoo>
